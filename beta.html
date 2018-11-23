@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				color: yellow;
+				
+			}
+		</style>
+	</head>
+	<body>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var DaYin = setInterval(function(){
+			$("body").append("Banana  ")
+		},10);
+		var a=0;
+		var JiShi=setInterval(function(){
+			a++;
+			if(a==60){
+				clearInterval(DaYin);
+				clearInterval(JiShi);
+			}
+			console.log(a)
+		},1000);
+	</script>
+</html>
